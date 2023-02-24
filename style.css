@@ -1,3 +1,21 @@
-.text-primary {
-    color: red !important;
-}
+html, body, header, #splash {
+    height:100%;
+  }
+  .spacer {
+    height:10px;
+    width:100%;
+    background-color:black;
+    margin:40px 0;
+    display: block;
+  }
+  .spacer2 {
+    height:60px;
+    display:block;
+  }
+  #splash {
+    background: url("https://via.placeholder.com/500x500/ccdddd/eeddee?text=image")no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
