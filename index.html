@@ -19,7 +19,7 @@
     <title>My website</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-primary" id="navy">
       <button
         class="navbar-toggler"
         type="button"
@@ -435,5 +435,8 @@
       integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $('body').scrollspy({ target: '#navy' });
+    </script>
   </body>
 </html>

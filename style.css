@@ -1,6 +1,9 @@
 html, body, header, #splash {
     height:100%;
   }
+body {
+    position: relative;
+}
   .spacer {
     height:10px;
     width:100%;
