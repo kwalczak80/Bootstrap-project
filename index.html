@@ -420,11 +420,12 @@
       src="https://kit.fontawesome.com/27436f561f.js"
       crossorigin="anonymous"
     ></script>
-    <script
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
       integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
@@ -437,6 +438,19 @@
     ></script>
     <script>
       $('body').scrollspy({ target: '#navy' });
+    </script>
+    <script>
+       $("#navy ul li a[href^='#']").on('click',function(e){
+      console.log(e);
+      e.preventDefault();
+      let hash = this.hash;
+      console.log($(hash).offset().top);
+      $('html, body').animate({
+        scrollTop : $(hash).offset().top
+      },1000, function(){
+        window.location.hash = hash;
+      })
+    })
     </script>
   </body>
 </html>
